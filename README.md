@@ -20,7 +20,7 @@ _ **Selected classes**: `apple`, `car`, `cat`, `dog`, `flower`
 _ **Samples per class**: 600  
 _ **Total images**: 3,000  
 _ **Images were**:  
-  - Normalised to the [0–1] range    
+&nbsp;&nbsp;Normalised to the [0–1] range    
   - Converted to RGB  
   - Resized to **128×128** to support deeper models like AlexNet, ResNet, and ConvNeXt
     
