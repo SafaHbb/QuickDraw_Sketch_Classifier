@@ -11,7 +11,7 @@ Input images were originally 28×28 grayscale and resized to 128×128 RGB for co
   <br>
   <em>Fig. 1. Quick, Draw! Sample Data</em>
 </p>
-
+---
 **Dataset:**  
 This project uses a 5-class subset of Google’s open-source [Quick, Draw!](https://quickdraw.withgoogle.com/data) dataset, which contains over 50 million hand-drawn sketches collected from an online game where users had 20 seconds to draw an object. Each sketch is a 28×28 grayscale image representing a single category.
 
@@ -40,37 +40,25 @@ _ **Validation/Test set transformations:**
 &nbsp;&nbsp;&nbsp;&nbsp;Resize to 128×128  
 &nbsp;&nbsp;&nbsp;&nbsp;Normalisation only  
 
-
-### 🧠 Methodology
-
-This project evaluates five deep learning models for classifying hand-drawn sketches. All input images were resized to **128×128 RGB** to meet the input requirements of deeper models. Each model outputs class probabilities for: `apple`, `car`, `cat`, `dog`, and `flower`.
-
 ---
-
-#### 📦 1. Convolutional Neural Network (CNN)
-
+**Methodology:**  
+This project evaluates five deep learning models for classifying hand-drawn sketches. All input images were resized to **128×128 RGB** to meet the input requirements of deeper models. Each model outputs class probabilities for: `apple`, `car`, `cat`, `dog`, and `flower`.  
+  
+1. Convolutional Neural Network (CNN)  
 A simple CNN with two convolutional layers, ReLU activations, pooling layers, and fully connected output. It serves as a fast and lightweight baseline model.
-
 <p align="center">
-  <img src="images/cnn_arch.png" alt="CNN Architecture" width="450"/>
+  <img src="![image](https://github.com/user-attachments/assets/9e5fe9a1-7125-4ea8-858f-52afaea5960b)" alt="CNN Architecture" width="450"/>
   <br><em>Fig. 1 — Architecture of the basic CNN model</em>
 </p>
 
----
-
-#### 📦 2. LeNet
-
-LeNet is an early CNN architecture adapted here for 128×128 RGB images. It uses average pooling and three fully connected layers. Performs well on simple data, but lacks depth.
-
+2. LeNet  
+LeNet is an early CNN architecture adapted here for 128×128 RGB images. It uses average pooling and three fully connected layers. Performs well on simple data, but lacks depth.  
 <p align="center">
   <img src="images/lenet_arch.png" alt="LeNet Architecture" width="450"/>
   <br><em>Fig. 2 — Architecture of the LeNet model</em>
-</p>
-
----
-
-#### 📦 3. AlexNet
-
+</p>  
+  
+3. AlexNet  
 A deeper CNN pretrained on ImageNet with five convolutional and three dense layers. Fine-tuned by replacing the final layer for 5-class classification.
 
 <p align="center">
