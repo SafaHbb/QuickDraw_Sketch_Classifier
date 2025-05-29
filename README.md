@@ -139,33 +139,43 @@ Each model was trained for 10 epochs and evaluated using the following metrics:
 | ResNet18  | 0.9167   | 0.9218    | 0.9187 | 0.9184   |
 | ConvNeXt  | **0.9500** | **0.9548** | **0.9526** | **0.9507** |
 
-🔸**ConvNeXt** outperformed all other models across every metric, achieving **95% accuracy** and showing excellent balance between precision and recall.  
-🔸**AlexNet** and **ResNet18** also performed strongly (~91.6% accuracy), confirming the benefit of deeper architectures.  
-🔸**CNN** and **LeNet** showed lower accuracy, struggling to generalise complex or abstract sketch features.  
+🔸ConvNeXt outperformed all other models across every metric, achieving 95% accuracy and showing excellent balance between precision and recall.  
+🔸AlexNet and ResNet18 also performed strongly (~91.6% accuracy), confirming the benefit of deeper architectures.  
+🔸CNN and LeNet showed lower accuracy, struggling to generalise complex or abstract sketch features.  
 
   
-#### 🌱 Training Dynamics
-
-Training loss curves revealed further insights into model behaviour:
-
-🔸**ConvNeXt** and **ResNet18** converged quickly and smoothly, showing stable learning and effective feature extraction.  
-🔸**LeNet** and **CNN** had slower, noisier convergence, indicating limitations in learning high-level abstractions.
-
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/bc7a3030-1568-4668-9040-1b94b60a4024" alt="Training Loss Curves" width="500"/>
+  <img src="https://github.com/user-attachments/assets/ea2e5131-fbc2-4500-b911-e75ce1d1775f" alt="Training Loss Curves" width="500"/>
   <br><em>Fig. 1 — Loss curves showing learning progress across models</em>
 </p>  
+
+🔸This chart shows that ConvNeXt achieved the best overall performance across all four metrics: accuracy, precision, recall, and F1 score.
+🔸AlexNet and ResNet18 also performed very well, with similar high scores across all metrics.
+🔸On the other hand, CNN and LeNet showed weaker results, particularly in recall and F1 score, indicating more frequent misclassifications or imbalance in prediction confidence.
   
-#### 🌱 Qualitative Results  
-To understand the types of errors the models make, we analysed sample predictions from the best-performing model (ConvNeXt):
-
-🔸**Correct predictions** (top row): The model correctly classified even stylised or distorted sketches.  
-🔸**Incorrect predictions** (bottom row): Errors were mostly due to high visual similarity between categories (e.g., *cat* vs. *dog*) or overly simplistic drawings.
-
+  
 <p align="center">
   <img src="https://github.com/user-attachments/assets/48b66b02-8f35-4089-9e30-ee78ecc43789" alt="ConvNeXt Prediction Examples" width="500"/>
   <br><em>Fig. 2 — Top: Correct predictions; Bottom: Incorrect predictions</em>
-</p>
+</p>  
+
+The training loss curves show how each model learned over 10 epochs.  
+🔸ConvNeXt and ResNet18 had the fastest and smoothest convergence, meaning they learned the patterns in the data efficiently and consistently.  
+🔸AlexNet also converged quickly, with slightly higher loss than ConvNeXt.  
+🔸CNN and LeNet were slower to converge and less stable, which reflects their lower capacity to model abstract sketch features and generalise well.  
+
+#### 🌱 Qualitative Results:  
+
+To better understand the model's behaviour, sample predictions from ConvNeXt (the best-performing model) were analysed.  
+🔸The top row shows correct predictions, even for sketches with unusual or abstract shapes, indicating strong generalisation.  
+🔸The bottom row shows incorrect predictions, such as misclassifying a “cat” as a “dog” or a “flower” as a “dog.” These mistakes often occurred due to visual similarity or overly simplistic drawings.  
+🔸While ConvNeXt performed well overall, it occasionally struggled with noisy or ambiguous sketches — especially when different categories had similar outlines.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/9a7ece7b-db8f-46c6-9bc6-3b5630e76eee" alt="ConvNeXt Prediction Examples" width="500"/>
+  <br><em>Fig. 2 — Examples of ConvNeXt Predictions. (Top: Correct predictions (green), Bottom: Incorrect predictions (red) with true class in parentheses.)</em>
+</p>  
+
 
 ---
 #### 🏆 Final Comparison & Insights  
