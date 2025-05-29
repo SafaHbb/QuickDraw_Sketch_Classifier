@@ -29,6 +29,7 @@ _ **Data Splits**:
 &nbsp;&nbsp;&nbsp;&nbsp;80% for training  
 &nbsp;&nbsp;&nbsp;&nbsp;20% for validation  
 &nbsp;&nbsp;&nbsp;&nbsp;From this, 20% was reused as a test set   
+
 _ **Preprocessing & Augmentation**:  
 &nbsp;&nbsp;&nbsp;&nbsp;Colour jitter (brightness, contrast, saturation)  
 &nbsp;&nbsp;&nbsp;&nbsp;Random horizontal flip  
