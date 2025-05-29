@@ -80,8 +80,8 @@ A modern CNN that combines convolutional layers with transformer-inspired design
   <img src="https://github.com/user-attachments/assets/eb6a7140-e389-415e-848d-0107206e2fd3" alt="ConvNeXt Architecture" width="450"/>
   <br><em>Fig. 5 — Architecture of the ConvNeXt model</em>
 </p>
----
 
+---
 **⭐ Loss Function:**  
 All models were trained using **Cross Entropy Loss**, which compares predicted class probabilities with the true class label:  
 \[
@@ -94,7 +94,7 @@ Where:
 - `ŷ_i` = predicted probability for class *i* (after softmax)
   
 ---
-**⭐ Optimisation:**
+**⭐ Optimisation:**  
 All models used the same training setup with Stochastic Gradient Descent (SGD):  
 &nbsp;&nbsp;&nbsp;&nbsp;Optimizer: SGD  
 &nbsp;&nbsp;&nbsp;&nbsp;Learning Rate: 0.01  
@@ -104,7 +104,7 @@ All models used the same training setup with Stochastic Gradient Descent (SGD):
 A GPU was used to speed up training for deeper models like AlexNet, ResNet18, and ConvNeXt. The best model (based on validation accuracy) was saved and evaluated on the test set.
 
 ---
-**⭐ Evaluation Metrics:**
+**⭐ Evaluation Metrics:**   
 Four common metrics were used to evaluate model performance:
 &nbsp;&nbsp;&nbsp;&nbsp;Accuracy:
 &nbsp;&nbsp;&nbsp;&nbsp;Accuracy = (TP + TN) / (TP + TN + FP + FN)
