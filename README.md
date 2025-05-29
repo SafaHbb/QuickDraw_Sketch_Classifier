@@ -95,6 +95,7 @@ Where:
 ---
 **⭐ Optimisation:**  
 All models used the same training setup with Stochastic Gradient Descent (SGD):  
+  
 Optimizer: SGD  
 Learning Rate: 0.01  
 Batch Size: 32  
@@ -105,6 +106,7 @@ A GPU was used to speed up training for deeper models like AlexNet, ResNet18, an
 ---
 **⭐ Evaluation Metrics:**   
 Four common metrics were used to evaluate model performance:  
+  
 Accuracy = (TP + TN) / (TP + TN + FP + FN)  
 Precision = TP / (TP + FP)  
 Recall = TP / (TP + FN)  
@@ -137,9 +139,9 @@ Each model was trained for 10 epochs and evaluated using the following metrics:
 | ResNet18  | 0.9167   | 0.9218    | 0.9187 | 0.9184   |
 | ConvNeXt  | **0.9500** | **0.9548** | **0.9526** | **0.9507** |
 
-✅ **ConvNeXt** outperformed all other models across every metric, achieving **95% accuracy** and showing excellent balance between precision and recall.  
-✅ **AlexNet** and **ResNet18** also performed strongly (~91.6% accuracy), confirming the benefit of deeper architectures.  
-⚠️ **CNN** and **LeNet** showed lower accuracy, struggling to generalise complex or abstract sketch features.
+❗**ConvNeXt** outperformed all other models across every metric, achieving **95% accuracy** and showing excellent balance between precision and recall.  
+❗**AlexNet** and **ResNet18** also performed strongly (~91.6% accuracy), confirming the benefit of deeper architectures.  
+❗**CNN** and **LeNet** showed lower accuracy, struggling to generalise complex or abstract sketch features.
 
 ---
 #### 🌱 Training Dynamics
