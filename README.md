@@ -20,23 +20,23 @@ _ **Selected classes**: `apple`, `car`, `cat`, `dog`, `flower`
 _ **Samples per class**: 600  
 _ **Total images**: 3,000  
 _ **Images were**:  
-&nbsp;&nbsp;Normalised to the [0–1] range    
-  - Converted to RGB  
-  - Resized to **128×128** to support deeper models like AlexNet, ResNet, and ConvNeXt
+&nbsp;&nbsp;&nbsp;&nbsp;Normalised to the [0–1] range    
+&nbsp;&nbsp;&nbsp;&nbsp;Converted to RGB  
+&nbsp;&nbsp;&nbsp;&nbsp;Resized to 128×128 to support deeper models like AlexNet, ResNet, and ConvNeXt
     
 _ **Labels encoded** as integers (e.g., `apple = 0`, `car = 1`, etc.)  
 _ **Data Splits**:  
-  - 80% for training  
-  - 20% for validation  
-  - From this, 20% was reused as a test set   
+&nbsp;&nbsp;&nbsp;&nbsp;80% for training  
+&nbsp;&nbsp;&nbsp;&nbsp;20% for validation  
+&nbsp;&nbsp;&nbsp;&nbsp;From this, 20% was reused as a test set   
 _ **Preprocessing & Augmentation**:  
-  - Colour jitter (brightness, contrast, saturation)  
-  - Random horizontal flip  
-  - Random resized crop to 128×128  
-  - Normalisation using ImageNet mean and std
+&nbsp;&nbsp;&nbsp;&nbsp;Colour jitter (brightness, contrast, saturation)  
+&nbsp;&nbsp;&nbsp;&nbsp;Random horizontal flip  
+&nbsp;&nbsp;&nbsp;&nbsp;Random resized crop to 128×128  
+&nbsp;&nbsp;&nbsp;&nbsp;Normalisation using ImageNet mean and std
     
 _ **Validation/Test set transformations:**  
-  - Resize to 128×128  
-  - Normalisation only  
+&nbsp;&nbsp;&nbsp;&nbsp;Resize to 128×128  
+&nbsp;&nbsp;&nbsp;&nbsp;Normalisation only  
 
 
