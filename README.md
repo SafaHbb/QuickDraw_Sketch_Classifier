@@ -84,11 +84,13 @@ A modern CNN that combines convolutional layers with transformer-inspired design
 ---
 **⭐ Loss Function:**  
 All models were trained using **Cross Entropy Loss**, which compares predicted class probabilities with the true class label:   
+
 $$\text{Loss} = - \sum_{i=1}^{C} y_i \log(\hat{y}_i)$$  
+
 Where:  
-- *C* = number of classes (5)  
-- *yₙ* = 1 if class *i* is correct, 0 otherwise  
-- *ŷₙ* = predicted probability for class *i* (after softmax)
+&nbsp;&nbsp;&nbsp;&nbsp;*C* = number of classes (5)  
+&nbsp;&nbsp;&nbsp;&nbsp;*yₙ* = 1 if class *i* is correct, 0 otherwise  
+&nbsp;&nbsp;&nbsp;&nbsp;*ŷₙ* = predicted probability for class *i* (after softmax)
   
 ---
 **⭐ Optimisation:**  
