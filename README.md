@@ -105,30 +105,18 @@ A GPU was used to speed up training for deeper models like AlexNet, ResNet18, an
 
 ---
 **⭐ Evaluation Metrics:**   
-Four common metrics were used to evaluate model performance:
-&nbsp;&nbsp;&nbsp;&nbsp;Accuracy:
-&nbsp;&nbsp;&nbsp;&nbsp;Accuracy = (TP + TN) / (TP + TN + FP + FN)
-&nbsp;&nbsp;&nbsp;&nbsp;Precision:
-Precision = TP / (TP + FP)
-Recall
-
-ini
-Copy
-Edit
-Recall = TP / (TP + FN)
-F1 Score
-
-sql
-Copy
-Edit
-F1 Score = 2 * (Precision * Recall) / (Precision + Recall)
-Where:
-
-TP = True Positives
-
-TN = True Negatives
-
-FP = False Positives
-
-FN = False Negatives
+Four common metrics were used to evaluate model performance:  
+&nbsp;&nbsp;&nbsp;&nbsp;Accuracy:  
+&nbsp;&nbsp;&nbsp;&nbsp;Accuracy = (TP + TN) / (TP + TN + FP + FN)  
+&nbsp;&nbsp;&nbsp;&nbsp;Precision:  
+&nbsp;&nbsp;&nbsp;&nbsp;Precision = TP / (TP + FP)  
+&nbsp;&nbsp;&nbsp;&nbsp;Recall:  
+&nbsp;&nbsp;&nbsp;&nbsp;Recall = TP / (TP + FN)  
+&nbsp;&nbsp;&nbsp;&nbsp;F1 Score:  
+&nbsp;&nbsp;&nbsp;&nbsp;F1 Score = 2 * (Precision * Recall) / (Precision + Recall)  
+Where:  
+&nbsp;&nbsp;&nbsp;&nbsp;TP = True Positives  
+&nbsp;&nbsp;&nbsp;&nbsp;TN = True Negatives  
+&nbsp;&nbsp;&nbsp;&nbsp;FP = False Positives  
+&nbsp;&nbsp;&nbsp;&nbsp;FN = False Negatives  
 
