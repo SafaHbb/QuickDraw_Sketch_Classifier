@@ -139,17 +139,17 @@ Each model was trained for 10 epochs and evaluated using the following metrics:
 | ResNet18  | 0.9167   | 0.9218    | 0.9187 | 0.9184   |
 | ConvNeXt  | **0.9500** | **0.9548** | **0.9526** | **0.9507** |
 
-**ConvNeXt** outperformed all other models across every metric, achieving **95% accuracy** and showing excellent balance between precision and recall.  
-**AlexNet** and **ResNet18** also performed strongly (~91.6% accuracy), confirming the benefit of deeper architectures.  
-**CNN** and **LeNet** showed lower accuracy, struggling to generalise complex or abstract sketch features.
+🔸**ConvNeXt** outperformed all other models across every metric, achieving **95% accuracy** and showing excellent balance between precision and recall.  
+🔸**AlexNet** and **ResNet18** also performed strongly (~91.6% accuracy), confirming the benefit of deeper architectures.  
+🔸**CNN** and **LeNet** showed lower accuracy, struggling to generalise complex or abstract sketch features.
 
 ___
 #### 🌱 Training Dynamics
 
 Training loss curves revealed further insights into model behaviour:
 
-**ConvNeXt** and **ResNet18** converged quickly and smoothly, showing stable learning and effective feature extraction.
-**LeNet** and **CNN** had slower, noisier convergence, indicating limitations in learning high-level abstractions.
+🔸**ConvNeXt** and **ResNet18** converged quickly and smoothly, showing stable learning and effective feature extraction.
+🔸**LeNet** and **CNN** had slower, noisier convergence, indicating limitations in learning high-level abstractions.
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/bc7a3030-1568-4668-9040-1b94b60a4024" alt="Training Loss Curves" width="500"/>
@@ -159,8 +159,8 @@ Training loss curves revealed further insights into model behaviour:
 #### 🌱 Qualitative Results  
 To understand the types of errors the models make, we analysed sample predictions from the best-performing model (ConvNeXt):
 
-**Correct predictions** (top row): The model correctly classified even stylised or distorted sketches.
-**Incorrect predictions** (bottom row): Errors were mostly due to high visual similarity between categories (e.g., *cat* vs. *dog*) or overly simplistic drawings.
+🔸**Correct predictions** (top row): The model correctly classified even stylised or distorted sketches.
+🔸**Incorrect predictions** (bottom row): Errors were mostly due to high visual similarity between categories (e.g., *cat* vs. *dog*) or overly simplistic drawings.
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/48b66b02-8f35-4089-9e30-ee78ecc43789" alt="ConvNeXt Prediction Examples" width="500"/>
@@ -170,9 +170,9 @@ To understand the types of errors the models make, we analysed sample prediction
 ---
 #### 🏆 Final Comparison & Insights
 
-- 🔴**ConvNeXt** demonstrated the highest performance and robustness across both metrics and real-world sketch variability.
-- 🔴**AlexNet** and **ResNet18** also performed well, confirming that deeper networks with pretrained weights adapt effectively to noisy, abstract input.
-- 🔴**CNN** and **LeNet** were limited by their simpler architecture and struggled particularly with edge cases and similar-shaped objects.
+- 🔸**ConvNeXt** demonstrated the highest performance and robustness across both metrics and real-world sketch variability.
+- 🔸**AlexNet** and **ResNet18** also performed well, confirming that deeper networks with pretrained weights adapt effectively to noisy, abstract input.
+- 🔸**CNN** and **LeNet** were limited by their simpler architecture and struggled particularly with edge cases and similar-shaped objects.
 
 These findings confirm that **modern, deeper architectures generalise better** and are more suitable for sketch recognition tasks involving human-drawn, inconsistent data.
 
