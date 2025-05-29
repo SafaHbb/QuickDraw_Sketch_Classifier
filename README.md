@@ -91,7 +91,7 @@ Where:
 \( C \) = number of classes (e.g., 5)  
 \( y~i = 1 \) if class \( i \) is the true class, otherwise \( y_i = 0 \)  
 \( \hat{y}~i \) = predicted probability for class \( i \) (after softmax)  
-H<sub>2</sub>O  
+H<sub>2 
 
 
 $$
