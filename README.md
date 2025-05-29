@@ -88,10 +88,9 @@ All models were trained using **Cross Entropy Loss**, which compares predicted c
 $$\text{Loss} = - \sum_{i=1}^{C} y_i \log(\hat{y}_i)$$  
 
 Where:  
-\( C \) = number of classes (e.g., 5)  
-\( y~i = 1 \) if class \( i \) is the true class, otherwise \( y_i = 0 \)  
-\( \hat{y}~i \) = predicted probability for class \( i \) (after softmax)  
-H<sub>2 
+C is the number of classes (in our case, 5).  
+y<sub>i is 1 if class i is the correct class, and 0 otherwise.  
+y<sub> ̂i is the predicted probability for class i (after softmax).  
 
 
 $$
