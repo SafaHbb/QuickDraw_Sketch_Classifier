@@ -16,9 +16,9 @@ Input images were originally 28×28 grayscale and resized to 128×128 RGB for co
 This project uses a 5-class subset of Google’s open-source [Quick, Draw!](https://quickdraw.withgoogle.com/data) dataset, which contains over 50 million hand-drawn sketches collected from an online game where users had 20 seconds to draw an object. Each sketch is a 28×28 grayscale image representing a single category.
 
 **For this study:**  
-  **Selected classes**: `apple`, `car`, `cat`, `dog`, `flower`  
-- **Samples per class**: 600  
-- **Total images**: 3,000  
+_ **Selected classes**: `apple`, `car`, `cat`, `dog`, `flower`  
+_ **Samples per class**: 600  
+_ **Total images**: 3,000  
 - **Images were**:  
   - Normalised to the [0–1] range    
   - Converted to RGB  
