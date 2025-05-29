@@ -88,7 +88,9 @@ Loss = − ∑ ( *yₙ* × log(*ŷₙ*) )
 **Loss** = − ∑<sub>i=1</sub><sup>C</sup> ( *y<sub>i</sub>* × log(*ŷ<sub>i</sub>* ) )  
 Loss = - ∑_{i=1}^{C} (y_i * log(ŷ_i))  
 Loss = - ∑_{i=1}^{C} (y_i * log(ŷ_i))  
+
 Loss = $$\left( \sum_{k=1}^n b_k^2 \right)$$   
+
 Loss = $$\left( \sum_{i=1}^C y_i * log(*ŷₙ* \right)^2  
 
 $$
