@@ -95,12 +95,8 @@ $$
 \text{Loss} = - \sum_{i=1}^{C} y_i \log(\hat{y}_i)
 $$  
 
-)   
-$$
-\begin{flushleft}
-\text{Loss} = - \sum_{i=1}^{C} y_i \log(\hat{y}_i)
-\end{flushleft}
-$$
+$$\left text{Loss} = - \sum_{i=1}^{C} y_i \log(\hat{y}_i)\right$$
+ 
 
 Where:  
 - *C* = number of classes (5)  
