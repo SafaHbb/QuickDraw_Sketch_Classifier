@@ -118,9 +118,7 @@ TP = True Positives, TN = True Negatives, FP = False Positives, FN = False Negat
 **⭐ Results:**  
 This section presents both quantitative and qualitative evaluation results to assess how well each model performed in recognising hand-drawn sketches from the Quick, Draw! dataset.
 
----
-
-#### 🔢 Quantitative Evaluation
+#### 🌱 Quantitative Evaluation
 
 Each model was trained for 10 epochs and evaluated using the following metrics:
 
@@ -144,8 +142,7 @@ Each model was trained for 10 epochs and evaluated using the following metrics:
 ⚠️ **CNN** and **LeNet** showed lower accuracy, struggling to generalise complex or abstract sketch features.
 
 ---
-
-#### 📉 Training Dynamics
+#### 🌱 Training Dynamics
 
 Training loss curves revealed further insights into model behaviour:
 
@@ -153,26 +150,22 @@ Training loss curves revealed further insights into model behaviour:
 - **LeNet** and **CNN** had slower, noisier convergence, indicating limitations in learning high-level abstractions.
 
 <p align="center">
-  <img src="images/loss_curve.png" alt="Training Loss Curves" width="500"/>
+  <img src="https://github.com/user-attachments/assets/bc7a3030-1568-4668-9040-1b94b60a4024" alt="Training Loss Curves" width="500"/>
   <br><em>Fig. 1 — Loss curves showing learning progress across models</em>
-</p>
-
----
-
-#### 🖼️ Qualitative Results
-
+</p>  
+  
+#### 🌱 Qualitative Results  
 To understand the types of errors the models make, we analysed sample predictions from the best-performing model (ConvNeXt):
 
 - ✅ **Correct predictions** (top row): The model correctly classified even stylised or distorted sketches.
 - ❌ **Incorrect predictions** (bottom row): Errors were mostly due to high visual similarity between categories (e.g., *cat* vs. *dog*) or overly simplistic drawings.
 
 <p align="center">
-  <img src="images/predictions.png" alt="ConvNeXt Prediction Examples" width="500"/>
+  <img src="https://github.com/user-attachments/assets/48b66b02-8f35-4089-9e30-ee78ecc43789" alt="ConvNeXt Prediction Examples" width="500"/>
   <br><em>Fig. 2 — Top: Correct predictions; Bottom: Incorrect predictions</em>
 </p>
 
 ---
-
 #### 🏆 Final Comparison & Insights
 
 - **ConvNeXt** demonstrated the highest performance and robustness across both metrics and real-world sketch variability.
