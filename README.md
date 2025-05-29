@@ -1,6 +1,6 @@
 # Recognising Quick, Draw! Sketches with Deep Learning
 
-**Introduction:**  
+**⭐ Introduction:**  
 Sketch recognition is a difficult task in computer vision due to the abstract and messy nature of human-drawn images.  
 This project explores how deep learning models can classify quick doodles from Google’s [Quick, Draw!](https://quickdraw.withgoogle.com/data) dataset.  
 We trained and compared five models — CNN, LeNet, AlexNet, ResNet18, and ConvNeXt — to recognise hand-drawn sketches of **apple**, **car**, **cat**, **dog**, and **flower**.  
