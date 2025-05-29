@@ -27,7 +27,7 @@ This project uses a 5-class subset of Google’s open-source [Quick, Draw!](http
 
 ---
 
-####Data Splits
+#### Data Splits
 
 - **80%** for training  
 - **20%** for validation  
@@ -35,7 +35,7 @@ This project uses a 5-class subset of Google’s open-source [Quick, Draw!](http
 
 ---
 
-####Preprocessing & Augmentation
+#### Preprocessing & Augmentation
 
 **Training set transformations:**
 - Colour jitter (brightness, contrast, saturation)  
