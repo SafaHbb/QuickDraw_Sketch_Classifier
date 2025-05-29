@@ -53,39 +53,29 @@ A simple CNN with two convolutional layers, ReLU activations, pooling layers, an
 
 2. LeNet  
 LeNet is an early CNN architecture adapted here for 128×128 RGB images. It uses average pooling and three fully connected layers. Performs well on simple data, but lacks depth.
-  
 <p align="center">
-  <img src="images/lenet_arch.png" alt="LeNet Architecture" width="450"/>
+  <img src="" width="450"/>https://github.com/user-attachments/assets/b5de4a99-bffe-443f-8e11-1414e04012cb
   <br><em>Fig. 2 — Architecture of the LeNet model</em>
 </p>  
   
 3. AlexNet  
-A deeper CNN pretrained on ImageNet with five convolutional and three dense layers. Fine-tuned by replacing the final layer for 5-class classification.
-
+A deeper CNN pretrained on ImageNet with five convolutional and three dense layers. Fine-tuned by replacing the final layer for 5-class classification.  
 <p align="center">
-  <img src="images/alexnet_arch.png" alt="AlexNet Architecture" width="450"/>
+  <img src="https://github.com/user-attachments/assets/6e0afaa2-fd46-408c-9c01-87aca926700e" width="450"/>
   <br><em>Fig. 3 — Architecture of the AlexNet model</em>
 </p>
-
----
-
-#### 📦 4. ResNet18
-
-ResNet18 introduces residual connections to mitigate vanishing gradients. Pretrained and fine-tuned for this task. It delivers strong performance with efficient training.
-
+  
+4. ResNet18  
+ResNet18 introduces residual connections to mitigate vanishing gradients. Pretrained and fine-tuned for this task. It delivers strong performance with efficient training.  
 <p align="center">
-  <img src="images/resnet_arch.png" alt="ResNet18 Architecture" width="450"/>
+  <img src="[images/resnet_arch.png" alt="ResNet18 Architecture](https://github.com/user-attachments/assets/e247c540-3dc2-435e-b0a4-63fddd90b719)" width="450"/>
   <br><em>Fig. 4 — Architecture of the ResNet18 model</em>
-</p>
-
----
-
-#### 📦 5. ConvNeXt
-
-A modern CNN that combines convolutional layers with transformer-inspired design, including GELU activation and layer normalization. Achieved the best accuracy in this project.
-
+</p>  
+  
+5. ConvNeXt  
+A modern CNN that combines convolutional layers with transformer-inspired design, including GELU activation and layer normalization. Achieved the best accuracy in this project.  
 <p align="center">
-  <img src="images/convnext_arch.png" alt="ConvNeXt Architecture" width="450"/>
+  <img src="[images/convnext_arch.png](https://github.com/user-attachments/assets/eb6a7140-e389-415e-848d-0107206e2fd3)" alt="ConvNeXt Architecture" width="450"/>
   <br><em>Fig. 5 — Architecture of the ConvNeXt model</em>
 </p>
 
