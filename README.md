@@ -1,6 +1,6 @@
 # Recognising Quick, Draw! Sketches with Deep Learning
 
-**⭐ Introduction:**  
+#### ⭐ Introduction:   
 Sketch recognition is a difficult task in computer vision due to the abstract and messy nature of human-drawn images.  
 This project explores how deep learning models can classify quick doodles from Google’s [Quick, Draw!](https://quickdraw.withgoogle.com/data) dataset.  
 We trained and compared five models — CNN, LeNet, AlexNet, ResNet18, and ConvNeXt — to recognise hand-drawn sketches of **apple**, **car**, **cat**, **dog**, and **flower**.  
@@ -13,7 +13,7 @@ Input images were originally 28×28 grayscale and resized to 128×128 RGB for co
 </p>
 
 ---
-**⭐ Dataset:**  
+#### ⭐ Dataset:    
 This project uses a 5-class subset of Google’s open-source [Quick, Draw!](https://quickdraw.withgoogle.com/data) dataset, which contains over 50 million hand-drawn sketches collected from an online game where users had 20 seconds to draw an object. Each sketch is a 28×28 grayscale image representing a single category.   
   
 **For this study:**  
@@ -43,7 +43,7 @@ _ **Validation/Test set transformations:**
 &nbsp;&nbsp;&nbsp;&nbsp;Normalisation only  
 
 ---
-**⭐ Methodology:**  
+#### ⭐ Methodology:    
 This project evaluates five deep learning models for classifying hand-drawn sketches. All input images were resized to 128×128 RGB to meet the input requirements of deeper models. Each model outputs class probabilities for: `apple`, `car`, `cat`, `dog`, and `flower`.  
   
 1. Convolutional Neural Network (CNN)  
@@ -82,7 +82,7 @@ A modern CNN that combines convolutional layers with transformer-inspired design
 </p>
 
 ---
-**⭐ Loss Function:**  
+#### ⭐ Loss Function:    
 All models were trained using **Cross Entropy Loss**, which compares predicted class probabilities with the true class label:   
 
 $$\text{Loss} = - \sum_{i=1}^{C} y_i \log(\hat{y}_i)$$  
@@ -93,7 +93,7 @@ y<sub>i</sub> is 1 if class i is the correct class, and 0 otherwise.
 ŷ<sub>i</sub> is the predicted probability for class i (after softmax).  
 
 ---
-**⭐ Optimisation:**  
+#### ⭐ Optimisation:   
 All models used the same training setup with Stochastic Gradient Descent (SGD):  
   
 Optimizer: SGD  
@@ -104,7 +104,7 @@ Epochs: 10
 A GPU was used to speed up training for deeper models like AlexNet, ResNet18, and ConvNeXt. The best model (based on validation accuracy) was saved and evaluated on the test set.
 
 ---
-**⭐ Evaluation Metrics:**   
+#### ⭐ Evaluation Metrics:     
 Four common metrics were used to evaluate model performance:  
   
 Accuracy = (TP + TN) / (TP + TN + FP + FN)  
@@ -117,10 +117,10 @@ TP = True Positives, TN = True Negatives, FP = False Positives, FN = False Negat
 
 ---
 
-**⭐ Results:**  
+#### ⭐ Results:  
 This section presents both quantitative and qualitative evaluation results to assess how well each model performed in recognising hand-drawn sketches from the Quick, Draw! dataset.
 
-#### 🌱 Quantitative Evaluation
+**🌱 Quantitative Evaluation:**  
 
 Each model was trained for 10 epochs and evaluated using the following metrics:
 
@@ -162,7 +162,7 @@ The training loss curves show how each model learned over 10 epochs.
 </p>  
 
 <br><br>   
-#### 🌱 Qualitative Results:  
+**🌱 Qualitative Results:**     
 
 To better understand the model's behaviour, sample predictions from ConvNeXt (the best-performing model) were analysed.  
 🔸The top row shows correct predictions, even for sketches with unusual or abstract shapes, indicating strong generalisation.  
