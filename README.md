@@ -89,8 +89,8 @@ $$\text{Loss} = - \sum_{i=1}^{C} y_i \log(\hat{y}_i)$$
 
 Where:  
 \( C \) = number of classes (e.g., 5)  
-\( y_i = 1 \) if class \( i \) is the true class, otherwise \( y_i = 0 \)  
-\( \hat{y}_i \) = predicted probability for class \( i \) (after softmax)  
+\( y~i = 1 \) if class \( i \) is the true class, otherwise \( y_i = 0 \)  
+\( \hat{y}~i \) = predicted probability for class \( i \) (after softmax)  
 
 $$
 \text{Loss} = - \sum_{i=1}^{C} y_i \log(\hat{y}_i)
