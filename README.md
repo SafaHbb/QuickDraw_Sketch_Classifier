@@ -86,6 +86,7 @@ A modern CNN that combines convolutional layers with transformer-inspired design
 All models were trained using **Cross Entropy Loss**, which compares predicted class probabilities with the true class label:   
 Loss = − ∑ ( *yₙ* × log(*ŷₙ*) )  
 **Loss** = − ∑<sub>i=1</sub><sup>C</sup> ( *y<sub>i</sub>* × log(*ŷ<sub>i</sub>* ) )
+Loss = - ∑_{i=1}^{C} (y_i * log(ŷ_i))  
 
 Where:  
 - `C` = number of classes (5)  
@@ -109,6 +110,7 @@ Four common metrics were used to evaluate model performance:
 &nbsp;&nbsp;&nbsp;&nbsp;Precision = TP / (TP + FP)  
 &nbsp;&nbsp;&nbsp;&nbsp;Recall = TP / (TP + FN)  
 &nbsp;&nbsp;&nbsp;&nbsp;F1 Score = 2 * (Precision * Recall) / (Precision + Recall)  
+
 Where:  
 TP = True Positives, TN = True Negatives, FP = False Positives, FN = False Negatives  
 
