@@ -1,4 +1,4 @@
-#Recognising Quick, Draw! Sketches with Deep Learning
+# Recognising Quick, Draw! Sketches with Deep Learning
 
 **Introduction**
 
