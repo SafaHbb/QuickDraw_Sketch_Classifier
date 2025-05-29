@@ -11,8 +11,8 @@ Input images were originally 28×28 grayscale and resized to 128×128 RGB for co
   <br>
   <em>Fig. 1. Quick, Draw! Sample Data</em>
 </p>
----  
 
+---
 **⭐ Dataset:**  
 This project uses a 5-class subset of Google’s open-source [Quick, Draw!](https://quickdraw.withgoogle.com/data) dataset, which contains over 50 million hand-drawn sketches collected from an online game where users had 20 seconds to draw an object. Each sketch is a 28×28 grayscale image representing a single category.   
   
@@ -44,7 +44,7 @@ _ **Validation/Test set transformations:**
 
 ---
 **⭐ Methodology:**  
-This project evaluates five deep learning models for classifying hand-drawn sketches. All input images were resized to **128×128 RGB** to meet the input requirements of deeper models. Each model outputs class probabilities for: `apple`, `car`, `cat`, `dog`, and `flower`.  
+This project evaluates five deep learning models for classifying hand-drawn sketches. All input images were resized to 128×128 RGB to meet the input requirements of deeper models. Each model outputs class probabilities for: `apple`, `car`, `cat`, `dog`, and `flower`.  
   
 1. Convolutional Neural Network (CNN)  
 A simple CNN with two convolutional layers, ReLU activations, pooling layers, and fully connected output. It serves as a fast and lightweight baseline model.
@@ -80,5 +80,6 @@ A modern CNN that combines convolutional layers with transformer-inspired design
   <img src="https://github.com/user-attachments/assets/eb6a7140-e389-415e-848d-0107206e2fd3" alt="ConvNeXt Architecture" width="450"/>
   <br><em>Fig. 5 — Architecture of the ConvNeXt model</em>
 </p>
+---
 
 
