@@ -25,26 +25,19 @@ This project uses a 5-class subset of Google’s open-source [Quick, Draw!](http
   - Resized to **128×128** to support deeper models like AlexNet, ResNet, and ConvNeXt
 - **Labels encoded** as integers (e.g., `apple = 0`, `car = 1`, etc.)
 
----
-
-#### Data Splits
-
-- 80% for training  
-- 20% for validation  
+- **Data Splits**:
+  - 80% for training
+  - 20% for validation
   - From this, 20% was reused as a test set
 
----
+- **Preprocessing & Augmentation**:
+  - Colour jitter (brightness, contrast, saturation)  
+  - Random horizontal flip  
+  - Random resized crop to 128×128  
+  - Normalisation using ImageNet mean and std
 
-#### Preprocessing & Augmentation
-
-**Training set transformations:**
-- Colour jitter (brightness, contrast, saturation)  
-- Random horizontal flip  
-- Random resized crop to 128×128  
-- Normalisation using ImageNet mean and std
-
-**Validation/Test set transformations:**
-- Resize to 128×128  
-- Normalisation only
+- **Validation/Test set transformations:**  
+  - Resize to 128×128  
+  - Normalisation only
 
 
