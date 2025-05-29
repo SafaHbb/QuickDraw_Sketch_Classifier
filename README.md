@@ -87,11 +87,21 @@ All models were trained using **Cross Entropy Loss**, which compares predicted c
 
 $$\text{Loss} = - \sum_{i=1}^{C} y_i \log(\hat{y}_i)$$  
 
-**Where:**  
-- **C** is the number of classes (in this project, 5)  
-- **\( y_i \)** is 1 if class *i* is the correct class, otherwise 0  
-- **\( \hat{y}_i \)** is the predicted probability for class *i* after applying softmax
-  
+Where:
+$$
+\text{Loss} = - \sum_{i=1}^{C} y_i \log(\hat{y}_i)
+\quad \text{where} \quad
+\begin{cases}
+C = \text{number of classes (e.g., 5)} \\
+y_i = 
+\begin{cases}
+1, & \text{if class } i \text{ is the true class} \\
+0, & \text{otherwise}
+\end{cases} \\
+\hat{y}_i = \text{predicted probability for class } i \text{ (after softmax)}
+\end{cases}
+$$
+
 ---
 **⭐ Optimisation:**  
 All models used the same training setup with Stochastic Gradient Descent (SGD):  
