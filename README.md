@@ -143,6 +143,8 @@ Each model was trained for 10 epochs and evaluated using the following metrics:
 🔸AlexNet and ResNet18 also performed strongly (~91.6% accuracy), confirming the benefit of deeper architectures.  
 🔸CNN and LeNet showed lower accuracy, struggling to generalise complex or abstract sketch features.  
 
+
+    
   
 <p align="center">
   <img src="https://github.com/user-attachments/assets/ea2e5131-fbc2-4500-b911-e75ce1d1775f" alt="Training Loss Curves" width="500"/>
