@@ -142,9 +142,8 @@ Each model was trained for 10 epochs and evaluated using the following metrics:
 | ResNet18  | 0.9167   | 0.9218    | 0.9187 | 0.9184   |
 | ConvNeXt  | **0.9500** | **0.9548** | **0.9526** | **0.9507** |  
 
-  <br><br> 
-  
-🔸This chart shows that ConvNeXt achieved the best overall performance across all four metrics: accuracy, precision, recall, and F1 score.  
+  <br><br>   
+- 🔸 This chart shows that ConvNeXt achieved the best overall performance across all four metrics: accuracy, precision, recall, and F1 score.  
 🔸AlexNet and ResNet18 also performed very well, with similar high scores across all metrics.  
 🔸On the other hand, CNN and LeNet showed weaker results, particularly in recall and F1 score, indicating more frequent misclassifications or imbalance in prediction confidence.      
 <p align="center">
@@ -152,8 +151,7 @@ Each model was trained for 10 epochs and evaluated using the following metrics:
   <br><em>Fig. 7 — Loss curves showing learning progress across models</em>
 </p>  
 
-<br><br>  
- 
+<br><br>   
 The training loss curves show how each model learned over 10 epochs.    
 🔸ConvNeXt and ResNet18 had the fastest and smoothest convergence, meaning they learned the patterns in the data efficiently and consistently.  
 🔸AlexNet also converged quickly, with slightly higher loss than ConvNeXt.  
@@ -163,7 +161,7 @@ The training loss curves show how each model learned over 10 epochs.
   <br><em>Fig. 8 — Top: Correct predictions; Bottom: Incorrect predictions</em>
 </p>  
 
-
+<br><br>   
 #### 🌱 Qualitative Results:  
 
 To better understand the model's behaviour, sample predictions from ConvNeXt (the best-performing model) were analysed.  
