@@ -91,7 +91,8 @@ Loss = - ∑_{i=1}^{C} (y_i * log(ŷ_i))
 
 Loss = $$\left( \sum_{k=1}^n b_k^2 \right)$$   
 
-Loss = $$\left( \sum_{i=1}^C y_i * log(*ŷₙ* \right)^2  
+$$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
+
 
 $$
 \text{Loss} = - \sum_{i=1}^{C} y_i \log(\hat{y}_i)
