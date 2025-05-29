@@ -92,20 +92,9 @@ C is the number of classes (in our case, 5).
 y<sub>i is 1 if class i is the correct class, and 0 otherwise.  
 y<sub> ̂i is the predicted probability for class i (after softmax).  
 
+y<sub>i</sub> is 1 if class i is the correct class, and 0 otherwise.   
+ŷ<sub>i</sub> is the predicted probability for class i (after softmax).  
 
-$$
-\text{Loss} = - \sum_{i=1}^{C} y_i \log(\hat{y}_i)
-\quad \text{where} \quad
-\begin{cases}
-C = \text{number of classes (e.g., 5)} \\
-y_i = 
-\begin{cases}
-1, & \text{if class } i \text{ is the true class} \\
-0, & \text{otherwise}
-\end{cases} \\
-\hat{y}_i = \text{predicted probability for class } i \text{ (after softmax)}
-\end{cases}
-$$  
 
 ---
 **⭐ Optimisation:**  
