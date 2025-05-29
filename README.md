@@ -13,9 +13,10 @@ Input images were originally 28×28 grayscale and resized to 128×128 RGB for co
 </p>
 ---  
 **Dataset:**  
-This project uses a 5-class subset of Google’s open-source [Quick, Draw!](https://quickdraw.withgoogle.com/data) dataset, which contains over 50 million hand-drawn sketches collected from an online game where users had 20 seconds to draw an object. Each sketch is a 28×28 grayscale image representing a single category.
-
+This project uses a 5-class subset of Google’s open-source [Quick, Draw!](https://quickdraw.withgoogle.com/data) dataset, which contains over 50 million hand-drawn sketches collected from an online game where users had 20 seconds to draw an object. Each sketch is a 28×28 grayscale image representing a single category.  
+  
 **For this study:**  
+  
 _ **Selected classes**: `apple`, `car`, `cat`, `dog`, `flower`  
 _ **Samples per class**: 600  
 _ **Total images**: 3,000  
@@ -54,7 +55,7 @@ A simple CNN with two convolutional layers, ReLU activations, pooling layers, an
 2. LeNet  
 LeNet is an early CNN architecture adapted here for 128×128 RGB images. It uses average pooling and three fully connected layers. Performs well on simple data, but lacks depth.
 <p align="center">
-  <img src="" width="450"/>https://github.com/user-attachments/assets/b5de4a99-bffe-443f-8e11-1414e04012cb
+  <img src="https://github.com/user-attachments/assets/b5de4a99-bffe-443f-8e11-1414e04012cb" alt="LeNet Architecture" width="450"/>
   <br><em>Fig. 2 — Architecture of the LeNet model</em>
 </p>  
   
@@ -68,14 +69,14 @@ A deeper CNN pretrained on ImageNet with five convolutional and three dense laye
 4. ResNet18  
 ResNet18 introduces residual connections to mitigate vanishing gradients. Pretrained and fine-tuned for this task. It delivers strong performance with efficient training.  
 <p align="center">
-  <img src="[images/resnet_arch.png" alt="ResNet18 Architecture](https://github.com/user-attachments/assets/e247c540-3dc2-435e-b0a4-63fddd90b719)" width="450"/>
+  <img src="https://github.com/user-attachments/assets/e247c540-3dc2-435e-b0a4-63fddd90b719" width="450"/>
   <br><em>Fig. 4 — Architecture of the ResNet18 model</em>
 </p>  
   
 5. ConvNeXt  
 A modern CNN that combines convolutional layers with transformer-inspired design, including GELU activation and layer normalization. Achieved the best accuracy in this project.  
 <p align="center">
-  <img src="[images/convnext_arch.png](https://github.com/user-attachments/assets/eb6a7140-e389-415e-848d-0107206e2fd3)" alt="ConvNeXt Architecture" width="450"/>
+  <img src="https://github.com/user-attachments/assets/eb6a7140-e389-415e-848d-0107206e2fd3" alt="ConvNeXt Architecture" width="450"/>
   <br><em>Fig. 5 — Architecture of the ConvNeXt model</em>
 </p>
 
