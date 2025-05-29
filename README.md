@@ -87,10 +87,10 @@ All models were trained using **Cross Entropy Loss**, which compares predicted c
 
 $$\text{Loss} = - \sum_{i=1}^{C} y_i \log(\hat{y}_i)$$  
 
-Where:  
-*C* = number of classes (5)  
-*y_i* = 1 if class *i* is correct, 0 otherwise  
-*hat{y}_i* = predicted probability for class *i* (after softmax)
+**Where:**  
+- **C** is the number of classes (in this project, 5)  
+- **\( y_i \)** is 1 if class *i* is the correct class, otherwise 0  
+- **\( \hat{y}_i \)** is the predicted probability for class *i* after applying softmax
   
 ---
 **⭐ Optimisation:**  
@@ -170,8 +170,8 @@ To understand the types of errors the models make, we analysed sample prediction
 ---
 #### 🏆 Final Comparison & Insights  
 
-🔸**ConvNeXt** demonstrated the highest performance and robustness across both metrics and real-world sketch variability.
-🔸**AlexNet** and **ResNet18** also performed well, confirming that deeper networks with pretrained weights adapt effectively to noisy, abstract input.
+🔸**ConvNeXt** demonstrated the highest performance and robustness across both metrics and real-world sketch variability.  
+🔸**AlexNet** and **ResNet18** also performed well, confirming that deeper networks with pretrained weights adapt effectively to noisy, abstract input.  
 🔸**CNN** and **LeNet** were limited by their simpler architecture and struggled particularly with edge cases and similar-shaped objects.
 
 These findings confirm that **modern, deeper architectures generalise better** and are more suitable for sketch recognition tasks involving human-drawn, inconsistent data.
