@@ -83,15 +83,13 @@ A modern CNN that combines convolutional layers with transformer-inspired design
 
 ---
 **⭐ Loss Function:**  
-All models were trained using **Cross Entropy Loss**, which compares predicted class probabilities with the true class label:  
-\[
-\text{Loss} = -\sum_{i=1}^{C} y_i \log(\hat{y}_i)
-\]
+All models were trained using **Cross Entropy Loss**, which compares predicted class probabilities with the true class label:   
+Loss = − ∑ ( *yₙ* × log(*ŷₙ*) )
 
 Where:  
 - `C` = number of classes (5)  
-- `y_i` = 1 if class *i* is correct, 0 otherwise  
-- `ŷ_i` = predicted probability for class *i* (after softmax)
+- *yₙ* = 1 if class *i* is correct, 0 otherwise  
+- *ŷₙ* = predicted probability for class *i* (after softmax)
   
 ---
 **⭐ Optimisation:**  
@@ -106,17 +104,12 @@ A GPU was used to speed up training for deeper models like AlexNet, ResNet18, an
 ---
 **⭐ Evaluation Metrics:**   
 Four common metrics were used to evaluate model performance:  
-&nbsp;&nbsp;&nbsp;&nbsp;Accuracy:  
 &nbsp;&nbsp;&nbsp;&nbsp;Accuracy = (TP + TN) / (TP + TN + FP + FN)  
-&nbsp;&nbsp;&nbsp;&nbsp;Precision:  
 &nbsp;&nbsp;&nbsp;&nbsp;Precision = TP / (TP + FP)  
-&nbsp;&nbsp;&nbsp;&nbsp;Recall:  
 &nbsp;&nbsp;&nbsp;&nbsp;Recall = TP / (TP + FN)  
-&nbsp;&nbsp;&nbsp;&nbsp;F1 Score:  
 &nbsp;&nbsp;&nbsp;&nbsp;F1 Score = 2 * (Precision * Recall) / (Precision + Recall)  
 Where:  
-&nbsp;&nbsp;&nbsp;&nbsp;TP = True Positives  
-&nbsp;&nbsp;&nbsp;&nbsp;TN = True Negatives  
-&nbsp;&nbsp;&nbsp;&nbsp;FP = False Positives  
-&nbsp;&nbsp;&nbsp;&nbsp;FN = False Negatives  
+TP = True Positives, TN = True Negatives, FP = False Positives, FN = False Negatives  
+
+---
 
