@@ -82,9 +82,21 @@ A modern CNN that combines convolutional layers with transformer-inspired design
 </p>
 ---
 
-**⭐ Loss Function
+**⭐ Loss Function:**  
 All models were trained using **Cross Entropy Loss**, which compares predicted class probabilities with the true class label:  
-Loss = -∑(y_i * log(ŷ_i))
+\[
+\text{Loss} = -\sum_{i=1}^{C} y_i \log(\hat{y}_i)
+\]
+
+Where:  
+- `C` = number of classes (5)  
+- `y_i` = 1 if class *i* is correct, 0 otherwise  
+- `ŷ_i` = predicted probability for class *i* (after softmax)
+
+In PyTorch:
+```python
+criterion = nn.CrossEntropyLoss()
+
 ---
 
 
