@@ -87,7 +87,8 @@ All models were trained using **Cross Entropy Loss**, which compares predicted c
 
 $$\text{Loss} = - \sum_{i=1}^{C} y_i \log(\hat{y}_i)$$  
 
-Where:
+Where:  
+
 $$
 \text{Loss} = - \sum_{i=1}^{C} y_i \log(\hat{y}_i)
 \quad \text{where} \quad
@@ -100,7 +101,7 @@ y_i =
 \end{cases} \\
 \hat{y}_i = \text{predicted probability for class } i \text{ (after softmax)}
 \end{cases}
-$$
+$$  
 
 ---
 **⭐ Optimisation:**  
