@@ -12,29 +12,39 @@ Input images were originally 28×28 grayscale and resized to 128×128 RGB for co
   <em>Fig. 1. Quick, Draw! Sample Data</em>
 </p>
 
-### 📁 Dataset
+**Dataset:**
+This project uses a 5-class subset of Google’s open-source [Quick, Draw!](https://quickdraw.withgoogle.com/data) dataset, which contains over 50 million hand-drawn sketches collected from an online game where users had 20 seconds to draw an object. Each sketch is a 28×28 grayscale image representing a single category.
 
-- Subset of Google’s open-source [Quick, Draw!](https://quickdraw.withgoogle.com/data) dataset  
-- Each sketch is a 28×28 grayscale image drawn in under 20 seconds  
-- **Selected categories**: `apple`, `car`, `cat`, `dog`, `flower`  
-- **600 samples per class** → 3,000 total images  
-- Images normalised to [0–1], converted to RGB, and resized to **128×128**  
-- Class labels encoded as integers (e.g. apple = 0, car = 1, etc.)
+**For this study:**
+- **Selected classes**: `apple`, `car`, `cat`, `dog`, `flower`
+- **Samples per class**: 600
+- **Total images**: 3,000
+- Images were:
+  - Normalised to the [0–1] range  
+  - Converted to RGB  
+  - Resized to **128×128** to support deeper models like AlexNet, ResNet, and ConvNeXt
+- **Labels encoded** as integers (e.g., `apple = 0`, `car = 1`, etc.)
 
-#### 🔄 Data Splits
+---
 
-- 80% for training  
-- 20% for validation  
-- From validation: 20% reused as a test set
+####Data Splits
 
-#### 🧪 Preprocessing & Augmentation
+- **80%** for training  
+- **20%** for validation  
+  - From this, **20%** was reused as a test set
 
-**Training set:**
+---
+
+####Preprocessing & Augmentation
+
+**Training set transformations:**
 - Colour jitter (brightness, contrast, saturation)  
 - Random horizontal flip  
 - Random resized crop to 128×128  
-- Normalisation (ImageNet mean & std)
+- Normalisation using ImageNet mean and std
 
-**Validation/Test sets:**
+**Validation/Test set transformations:**
 - Resize to 128×128  
 - Normalisation only
+
+
