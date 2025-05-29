@@ -92,13 +92,43 @@ Where:
 - `C` = number of classes (5)  
 - `y_i` = 1 if class *i* is correct, 0 otherwise  
 - `ŷ_i` = predicted probability for class *i* (after softmax)
+  
+---
+**⭐ Optimisation:**
+All models used the same training setup with Stochastic Gradient Descent (SGD):  
+&nbsp;&nbsp;&nbsp;&nbsp;Optimizer: SGD  
+&nbsp;&nbsp;&nbsp;&nbsp;Learning Rate: 0.01  
+&nbsp;&nbsp;&nbsp;&nbsp;Batch Size: 32  
+&nbsp;&nbsp;&nbsp;&nbsp;Epochs: 10  
 
-In PyTorch:
-```python
-criterion = nn.CrossEntropyLoss()
+A GPU was used to speed up training for deeper models like AlexNet, ResNet18, and ConvNeXt. The best model (based on validation accuracy) was saved and evaluated on the test set.
 
 ---
+**⭐ Evaluation Metrics:**
+Four common metrics were used to evaluate model performance:
+&nbsp;&nbsp;&nbsp;&nbsp;Accuracy:
+&nbsp;&nbsp;&nbsp;&nbsp;Accuracy = (TP + TN) / (TP + TN + FP + FN)
+&nbsp;&nbsp;&nbsp;&nbsp;Precision:
+Precision = TP / (TP + FP)
+Recall
 
+ini
+Copy
+Edit
+Recall = TP / (TP + FN)
+F1 Score
 
+sql
+Copy
+Edit
+F1 Score = 2 * (Precision * Recall) / (Precision + Recall)
+Where:
 
+TP = True Positives
+
+TN = True Negatives
+
+FP = False Positives
+
+FN = False Negatives
 
