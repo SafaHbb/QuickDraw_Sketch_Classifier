@@ -143,7 +143,7 @@ Each model was trained for 10 epochs and evaluated using the following metrics:
 | ConvNeXt  | **0.9500** | **0.9548** | **0.9526** | **0.9507** |  
 
   <br><br>   
-- 🔸 This chart shows that ConvNeXt achieved the best overall performance across all four metrics: accuracy, precision, recall, and F1 score.  
+🔸This chart shows that ConvNeXt achieved the best overall performance across all four metrics: accuracy, precision, recall, and F1 score.  
 🔸AlexNet and ResNet18 also performed very well, with similar high scores across all metrics.  
 🔸On the other hand, CNN and LeNet showed weaker results, particularly in recall and F1 score, indicating more frequent misclassifications or imbalance in prediction confidence.      
 <p align="center">
