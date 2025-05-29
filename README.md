@@ -41,3 +41,63 @@ _ **Validation/Test set transformations:**
 &nbsp;&nbsp;&nbsp;&nbsp;Normalisation only  
 
 
+### 🧠 Methodology
+
+This project evaluates five deep learning models for classifying hand-drawn sketches. All input images were resized to **128×128 RGB** to meet the input requirements of deeper models. Each model outputs class probabilities for: `apple`, `car`, `cat`, `dog`, and `flower`.
+
+---
+
+#### 📦 1. Convolutional Neural Network (CNN)
+
+A simple CNN with two convolutional layers, ReLU activations, pooling layers, and fully connected output. It serves as a fast and lightweight baseline model.
+
+<p align="center">
+  <img src="images/cnn_arch.png" alt="CNN Architecture" width="450"/>
+  <br><em>Fig. 1 — Architecture of the basic CNN model</em>
+</p>
+
+---
+
+#### 📦 2. LeNet
+
+LeNet is an early CNN architecture adapted here for 128×128 RGB images. It uses average pooling and three fully connected layers. Performs well on simple data, but lacks depth.
+
+<p align="center">
+  <img src="images/lenet_arch.png" alt="LeNet Architecture" width="450"/>
+  <br><em>Fig. 2 — Architecture of the LeNet model</em>
+</p>
+
+---
+
+#### 📦 3. AlexNet
+
+A deeper CNN pretrained on ImageNet with five convolutional and three dense layers. Fine-tuned by replacing the final layer for 5-class classification.
+
+<p align="center">
+  <img src="images/alexnet_arch.png" alt="AlexNet Architecture" width="450"/>
+  <br><em>Fig. 3 — Architecture of the AlexNet model</em>
+</p>
+
+---
+
+#### 📦 4. ResNet18
+
+ResNet18 introduces residual connections to mitigate vanishing gradients. Pretrained and fine-tuned for this task. It delivers strong performance with efficient training.
+
+<p align="center">
+  <img src="images/resnet_arch.png" alt="ResNet18 Architecture" width="450"/>
+  <br><em>Fig. 4 — Architecture of the ResNet18 model</em>
+</p>
+
+---
+
+#### 📦 5. ConvNeXt
+
+A modern CNN that combines convolutional layers with transformer-inspired design, including GELU activation and layer normalization. Achieved the best accuracy in this project.
+
+<p align="center">
+  <img src="images/convnext_arch.png" alt="ConvNeXt Architecture" width="450"/>
+  <br><em>Fig. 5 — Architecture of the ConvNeXt model</em>
+</p>
+
+
