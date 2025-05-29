@@ -89,8 +89,8 @@ $$\text{Loss} = - \sum_{i=1}^{C} y_i \log(\hat{y}_i)$$
 
 Where:  
 *C* = number of classes (5)  
-*yₙ* = 1 if class *i* is correct, 0 otherwise  
-*ŷₙ* = predicted probability for class *i* (after softmax)
+*y_i* = 1 if class *i* is correct, 0 otherwise  
+*hat{y}_i* = predicted probability for class *i* (after softmax)
   
 ---
 **⭐ Optimisation:**  
