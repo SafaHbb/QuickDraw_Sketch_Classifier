@@ -24,7 +24,7 @@ _ **Images were**:
   - Converted to RGB  
   - Resized to **128×128** to support deeper models like AlexNet, ResNet, and ConvNeXt
     
-_ **Labels encoded** as integers (e.g., `apple = 0`, `car = 1`, etc.)
+_ **Labels encoded** as integers (e.g., `apple = 0`, `car = 1`, etc.)  
 _ **Data Splits**:  
   - 80% for training  
   - 20% for validation  
