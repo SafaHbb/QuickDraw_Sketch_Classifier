@@ -94,7 +94,13 @@ Loss = $$\left( \sum_{i=1}^C y_i * log(*ŷₙ* \right)^2
 $$
 \text{Loss} = - \sum_{i=1}^{C} y_i \log(\hat{y}_i)
 $$  
-\text{Loss} = - \sum_{i=1}^{C} y_i \log(\hat{y}_i)  
+
+)   
+$$
+\begin{flushleft}
+\text{Loss} = - \sum_{i=1}^{C} y_i \log(\hat{y}_i)
+\end{flushleft}
+$$
 
 Where:  
 - *C* = number of classes (5)  
